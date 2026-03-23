@@ -1,4 +1,4 @@
-import AlunoModel from '../models/AlunoModel';
+import AlunoModel from '../models/AlunoModel.js';
 import { gerarPdfAluno, gerarPdfTodos } from '../utils/pdfHelper.js';
 
 export const relatorioTodos = async (req, res) => {

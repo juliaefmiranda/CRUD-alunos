@@ -16,8 +16,16 @@ async function main() {
 
     await prisma.aluno.createMany({
         data: [
-            { nome: 'Danilo do Valle'},
-            { nome: 'Nicolly' },
+            {
+                nome: 'Danilo do Valle',
+                escola: 'Senai',
+                turma: '3',
+            },
+            {
+                nome: 'Nicolly',
+                escola: 'Senai',
+                turma: '3',
+            },
         ],
     });
 

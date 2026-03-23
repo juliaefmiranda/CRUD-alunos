@@ -25,7 +25,7 @@ export async function gerarPdfAluno(aluno) {
     return htmlPdf.generatePdf({ content: html }, { format: 'A4' });
 }
 
-export async function gerarPdfAluno(alunos) {
+export async function gerarPdfTodos(alunos) {
     const linhas = alunos.map(
         (a) => `
         <tr>

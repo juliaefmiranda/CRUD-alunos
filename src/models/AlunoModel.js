@@ -43,7 +43,7 @@ export default class AlunoModel {
     }
 
     static async buscarPorId(id) {
-        const data = await prisma.aluno.findUnique({ where: { id } });
+        const data = await prisma.aluno.findUnique({ where: { id: Number(id) } });
         if (!data) return null;
         return new AlunoModel(data);
     }
